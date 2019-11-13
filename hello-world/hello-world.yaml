@@ -1,0 +1,26 @@
+policy: 1.0.0
+ 
+info:
+  title: hello-world
+  name: hello-world
+  version: 1.0.0
+  description: Hello World Extension
+ 
+attach:
+  - rest
+  - soap
+ 
+gateways:
+  - datapower-gateway
+ 
+properties:
+  $schema: "http://json-schema.org/draft-04/schema#"
+  type: object
+  properties:
+    message:
+      label: Message to be returned
+      description: A message to be returned in the X-Hello-World header
+      type: string
+      default: oh-hi
+  required:
+    - message

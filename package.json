@@ -1,0 +1,22 @@
+{
+  "name": "apiconnect-custom-policy-project-example",
+  "version": "1.0.0",
+  "description": "Example of managing custom policy project(s)",
+  "author": "Eli Sherer (eli.sherer@gmail.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "apic-dp-js-policy -p hello-world",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisherer/apiconnect-custom-policy-project-example.git"
+  },
+  "devDependencies": {
+    "apic-dp-js-policy": "^3.4.0",
+    "jest": "^24.9.0",
+    "jest-environment-ibm-apiconnect": "^1.0.0",
+    "jest-environment-jsdom": "^24.9.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
