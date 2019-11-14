@@ -1,0 +1,26 @@
+policy: 1.0.0
+ 
+info:
+  title: hello-complex
+  name: hello-complex
+  version: 1.0.0
+  description: A more complex example of a custom policy
+ 
+attach:
+  - rest
+  - soap
+ 
+gateways:
+  - datapower-gateway
+ 
+properties:
+  $schema: "http://json-schema.org/draft-04/schema#"
+  type: object
+  properties:
+    url:
+      label: The URL to call
+      description: The URL to do GET call and return its response
+      type: string
+      default: https://jsonplaceholder.typicode.com/todos/1
+  required:
+    - url
